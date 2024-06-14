@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess my Number!</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-options">
+        <button id="replay-btn" class="header-btn">Play Again!</button>
+        <button id="mode-btn" class="header-btn">&lt;Mode: 1-10&gt;</button>
+      </div>
+      <h1>GUESS MY NUMBER</h1>
+    </header>
+
+    <div class="my-number">
+      <div class="line-box" id="line-box-one"></div>
+      <div class="the-number" id="the-number">
+        <span>?</span>
+      </div>
+      <div class="line-box" id="line-box-two"></div>
+    </div>
+
+    <div class="guess-container">
+      <div class="your-guess">
+        <input class="guess-box"/>
+        <button class="check-btn">Check!</button>
+      </div>
+
+      <div class="game-info" id="game-info">
+        <div class="message" id="message">
+            <img src="/assets/play.svg" class="icon" id="message-icon">
+            <label>PLAY!</label>
+        </div>
+        <div class="player-stats">
+            <div class="score">
+                <img src="/assets/score.svg" class="icon">
+                <label>SCORE: </label>
+                <label class="score-num">20</label>
+            </div>
+            <div class="highscore">
+                <img src="/assets/highscore.svg" class="icon">
+                <label>HIGH SCORE: </label>
+                <label class="score-num">0</label>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

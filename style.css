@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "title-font";
+  src: url("fonts/title-font.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "usual-font";
+  src: url("fonts/usual-font.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "backup-font";
+  src: url("fonts/backup-font.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "title-font", sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+.new-body {
+  font-family: "title-font", sans-serif;
+  color: #fff;
+  background: linear-gradient(45deg, #ff00ff, #00ff00, #00ffff, #ff00ff);
+  background-size: 400% 400%; /* Adjusted the size to cover the entire animation distance */
+  animation: neon-glow 3s ease infinite;
+}
+
+@keyframes neon-glow {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.header-options {
+  justify-content: space-between;
+  display: flex;
+  margin: 20px 20px 0px 20px;
+}
+
+.header h1 {
+  text-align: center;
+  padding: auto;
+  font-size: 60px;
+  margin: 20px;
+}
+
+.header-btn {
+  font-family: "usual-font", sans-serif;
+  font-size: 50px;
+  color: #fff;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-btn:hover {
+  /* color: rgb(52, 205, 18); */
+  color: rgb(203, 50, 237);
+}
+
+.my-number {
+  display: flex;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+.line-box {
+  height: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.the-number {
+  width: 600px;
+  height: 120px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 90px;
+  font-family: "backup-font", sans-serif;
+}
+
+.the-number span {
+  margin-left: 30px;
+}
+
+.guess-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.your-guess {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 140px;
+}
+
+.guess-box {
+  font-family: "backup-font", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  height: 180px;
+  width: 260px;
+  background-color: transparent;
+  color: #fff;
+  border: 10px solid #fff;
+  padding: 10px;
+}
+
+.check-btn {
+  font-family: "usual-font", sans-serif;
+  font-size: 100px;
+  color: rgb(52, 205, 18);
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.check-btn:hover {
+  color: rgb(203, 50, 237);
+}
+
+.game-info {
+  font-family: "usual-font", sans-serif;
+  font-size: 60px;
+  gap: 140px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.icon {
+  width: 50px;
+}
+
+.message-for-win {
+  font-size: 100px;
+  color: rgb(203, 50, 237);
+  font-weight: bolder;
+}
+
+.player-stats {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
